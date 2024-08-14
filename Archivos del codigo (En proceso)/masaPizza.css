@@ -1,1 +1,18 @@
+body{background-color: rgb(#fa0000, #00b200, #000029);
+}
 
+h1{text-decoration-color: cornflowerblue;
+  text-align: center;
+}
+
+p{text-align: center ;
+ text-familly: Arial;
+ 
+}
+
+h2{ text-size-adjust: 150px;}
+h3{text-size-adjust: 1000px;}
+li{text-align: justify;
+  text-familly: Arial;
+   text-size-adjust: 800px;
+}
