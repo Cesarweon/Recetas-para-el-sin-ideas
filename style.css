@@ -1,0 +1,16 @@
+li{font-size: 10;}
+img {
+    margin: auto;
+     width:300px;
+    height:300px;}
+body{background-color: #ffc46e;
+    text-align: center ;
+    font-family: Arial;}
+.button{ text-align: center;
+    background-color:  #8f9293;
+       border: 2px solid black;
+       margin-right: auto; ;
+       marging-left:auto ;
+       marging-top: 1%;
+       border-radius: 10px;
+       height: 20%;}
