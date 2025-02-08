@@ -7,8 +7,9 @@
 </head>
 <body>
     <h1>Recetas para el sin ideas</h1>
+    
     <script>
-      fetch("https://462082b4-0042-414a-a8a2-43f02e564238-00-3efzvacs5icdk.riker.replit.dev/api/recetas")  
+      fetch("https://462082b4-0042-414a-a8a2-43f02e564238-00-3efzvacs5icdk.riker.replit.dev/api/recetas")  // Usamos la URL pública de la API
         .then(response => response.json())
         .then(data => {
           let container = document.createElement("ul");
@@ -26,6 +27,7 @@
         })
         .catch(error => console.error("Error al cargar recetas:", error));
     </script>
+</body>
 </body>
 </html>
 
