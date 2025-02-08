@@ -18,5 +18,25 @@
     <li> 1 gramo = 0.035 Onzas</li>
     <li> 1 ml = 0.034 Onza liquida</li>
    </body>
+  <script>
+  fetch("https://tu-api.repl.co/api/recetas")  
+    .then(response => response.json())
+    .then(data => {
+      let container = document.createElement("ul");
+      container.style.listStyle = "none";
+      container.style.padding = "10px";
+
+      data.forEach(receta => {
+        let item = document.createElement("li");
+        item.innerHTML = `<strong>🍽️ ${receta.nombre}:</strong> ${receta.ingredientes.join(", ")}`;
+        item.style.marginBottom = "5px";
+        container.appendChild(item);
+      });
+
+      document.body.appendChild(container);
+    })
+    .catch(error => console.error("Error al cargar recetas:", error));
+</script>
+
 </html>
 
